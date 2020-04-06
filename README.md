@@ -26,9 +26,9 @@ _"Alexa, open the curtains"_
 
 This is done by deploying slide.py and the slide_lambda.py scripts to AWS and connectting it to Alexa using IFTTT.
 
-For deployment to AWS Lambda see documents/deploy_to_aws.txt.
+For deployment to AWS Lambda see documentation/deploy_to_aws.txt.
 
-For connecting it all with IFTTT see documents/connect_to_ifttt.txtx
+For connecting it all with IFTTT see documentation/connect_to_ifttt.txtx
 
 ---
 ## credits
