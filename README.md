@@ -7,7 +7,7 @@ You can find the Slide devices at https://slide.store
 and full api documentation at https://documenter.getpostman.com/view/6223391/S1Lu2pSf?version=latest#intro
 
 
-###Prerequisites
+##Prerequisites
 Code is for Python 3.6 and higher.
 
 Make sure you have the environment settings slide_email and slide_password set.\
