@@ -1,3 +1,9 @@
+# Project specific
+utilities/
+.DS_Store
+.idea/
+deployment/rootkey.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
