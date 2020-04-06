@@ -1,0 +1,41 @@
+#via https://medium.com/@daniel.woods/use-alexa-ifttt-to-control-your-aws-environment-ffe48ceb5da4
+
+https://console.aws.amazon.com/apigateway/main/apis?region=us-east-1
+REST API -> build
+    REST
+    New API
+Create API
+  Protocol: REST
+  API Name: IFTTT_to_Slide
+  Endpoint Type: Regional
+
+On the root of the API, create a new Child Resource (Actions → Create Resource).
+  Configure as proxy resource: Yes
+  Resource Name: proxy
+  Resource Path: {proxy+}
+
+On the /{proxy+} - ANY - Setup page, use the following settings:
+  Integration type: Lambda Function Proxy
+  Lambda Region: <Whatever region you are using> (us-east-1)
+  Lambda Function: slide_lambda
+
+Once the method has been created, we can deploy the API. Click the “Actions” drop down → Deploy API.
+  Deployment stage: [New Stage]
+  Stage name: ifttt
+
+Invoke URL is shown on the screen now
+  https://r3hv3emtbg.execute-api.us-east-1.amazonaws.com/ifttt
+
+Connect Alexa to IFTTT
+  https://ifttt.com/amazon_alexa
+
+Create a new applet
+  https://ifttt.com/discover?source=get_more_header_button
+  Klik op [ + ]
+  Klik op IF [+] -> Amazon Alexa -> Say a specific phrase -> Vul in phrase
+  Klik op THEN [+] -> Web hooks
+    Vul in Invoke URL met daarachter de event (/open of /close)
+    Method: POST
+    Content Type: application/json
+    Body:
+    Create action
