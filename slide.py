@@ -76,6 +76,6 @@ def request(protocol, url, headers, data={}):
 if __name__=='__main__':
     sl = Slide()
     sl.print_overview()
-    sl.move("Livingroom", .1)
+    #sl.move("Livingroom", .1)
     sPosition = f'Slide is at position {sl.get_position("Livingroom")}'
     print(sPosition )

@@ -3,6 +3,7 @@ utilities/
 .DS_Store
 .idea/
 deployment/rootkey.csv
+php/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
