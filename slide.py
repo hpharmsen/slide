@@ -1,7 +1,11 @@
-import urllib3
 import json
-from datetime import datetime
 import os
+from datetime import datetime
+
+import urllib3
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Api documentatie op https://documenter.getpostman.com/view/6223391/S1Lu2pSf?version=latest#intro
 # Make sure you have the environment settings slide_email and slide_password set

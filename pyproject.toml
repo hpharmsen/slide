@@ -5,6 +5,7 @@ description = "Control Slide curtains via the Slide API"
 requires-python = ">=3.14"
 dependencies = [
     "astral",
+    "python-dotenv>=1.2.4",
     "urllib3",
 ]
 
